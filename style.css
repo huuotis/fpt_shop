@@ -226,22 +226,21 @@ html {
    transition: 0.2s;
 }
 
-.main {
+#main {
    overflow: hidden;
 }
 
 .container {
    max-width: 1430px;
-   padding-left: 15px;
-   padding-right: 15px;
    margin: 0 auto;
+   padding: 36px 15px;
 }
 
-.header__wrap {
+#header {
    background-color: var(--color-red);
 }
 
-.header {
+.header-content {
    max-width: 1430px;
    margin: 0 auto;
    display: flex;
@@ -250,7 +249,7 @@ html {
    padding: 12px 15px;
 }
 
-.header .header-logo {
+#header .header-logo {
    width: 187px;
    margin-top: 10px;
    display: inline-block;
@@ -258,7 +257,7 @@ html {
    z-index: 10;
 }
 
-.header .header-logo__image {
+#header .header-logo__image {
    width: 151px;
    height: 40px;
    background-position: -2px -7px;
@@ -267,12 +266,12 @@ html {
    background-image: url(https://fptshop.com.vn/Content/v4/images/iconhd.png?v=3);
 }
 
-.header .header-search {
+#header .header-search {
    flex: 1;
    display: flex;
 }
 
-.header .header-form {
+#header .header-form {
    display: flex;
    flex: 1;
    align-items: center;
@@ -281,21 +280,21 @@ html {
    border-radius: 5px;
 }
 
-.header .header-form__icon {
+#header .header-form__icon {
    cursor: pointer;
    color: var(--color-gray);
    position: relative;
    right: 16px;
 }
 
-.header .header-form__input {
+#header .header-form__input {
    flex: 1;
    padding: 10px 32px 10px 16px;
    outline: none;
    border: none;
 }
 
-.header .header-contact {
+#header .header-contact {
    padding-left: 20px;
 
    font-size: 14px;
@@ -303,34 +302,34 @@ html {
    align-items: center;
 }
 
-.header .header-contact-main {
+#header .header-contact-main {
    text-align: center;
    display: flex;
    flex-direction: column;
    padding: 4px 20px;
 }
 
-.header .header-contact-main:first-child {
+#header .header-contact-main:first-child {
    border-right: solid 1px #e1e1e1;
 }
 
-.header .header-contact-main__text {
+#header .header-contact-main__text {
    display: block;
    margin-bottom: 5px;
    color: var(--color-white);
 }
 
-.header .header-contact-main__number {
+#header .header-contact-main__number {
    text-decoration: none;
    color: var(--color-white);
    font-weight: 700;
 }
 
-.header .header-contact-main__number:hover {
+#header .header-contact-main__number:hover {
    opacity: 0.6;
 }
 
-.header .cart-group {
+#header .cart-group {
    color: var(--color-white);
    display: inline-flex;
    justify-content: flex-end;
@@ -338,8 +337,8 @@ html {
    width: 16.66666667%;
 }
 
-.header .cart-group-user,
-.header .cart-group-calendar {
+#header .cart-group-user,
+#header .cart-group-calendar {
    background-color: var(--color-primary);
    width: 50px;
    height: 50px;
@@ -348,16 +347,16 @@ html {
    cursor: pointer;
 }
 
-.header .cart-group-user {
+#header .cart-group-user {
    position: relative;
    margin-right: 20px;
 }
 
-.header .cart-group-user:hover .cart-group__main {
+#header .cart-group-user:hover .cart-group__main {
    display: block;
 }
 
-.header .cart-group__main {
+#header .cart-group__main {
    position: absolute;
    background: var(--color-white);
    width: 200px;
@@ -369,20 +368,20 @@ html {
    display: none;
 }
 
-.header .cart-group-user__icon,
-.header .cart-group-calendar__icon {
+#header .cart-group-user__icon,
+#header .cart-group-calendar__icon {
    margin: auto;
 }
 
-.header .cart-group-calendar {
+#header .cart-group-calendar {
    position: relative;
 }
 
-.header .cart-group-calendar:hover .cart-group-calendar__main {
+#header .cart-group-calendar:hover .cart-group-calendar__main {
    display: block;
 }
 
-.header .cart-group-calendar__main {
+#header .cart-group-calendar__main {
    position: absolute;
    top: 100%;
    right: 0;
@@ -397,7 +396,7 @@ html {
    font-size: 15px;
 }
 
-.header .cart-group-calendar__number {
+#header .cart-group-calendar__number {
    position: absolute;
    top: -5px;
    right: -15px;
@@ -412,7 +411,7 @@ html {
    text-align: center;
 }
 
-.menu {
+#menu {
    background-color: var(--color-text);
    width: 100%;
    color: white;
@@ -441,7 +440,7 @@ html {
    margin-right: 2px;
 }
 
-.sales {
+#sales {
    padding: 60px 0;
    background: url(https://fptshop.com.vn/Content/v5d/sale-special/images/bg-bnsale.png) no-repeat center;
    background-size: cover;
@@ -532,7 +531,6 @@ html {
    opacity: 0.8;
 }
 
-/* <<========== NEW CLASS ==========>> */
 .support .container__support {
    display: flex;
 }
@@ -559,7 +557,6 @@ html {
    display: block;
 }
 
-/* <<========== NEW CLASS ==========>> */
 .picture {
    padding: 20px 0;
 }
@@ -587,15 +584,11 @@ html {
    object-fit: cover;
 }
 
-.wrapper-bg {
+#content {
    background: #611;
    width: 100%;
    height: 100%;
    padding-bottom: 40px;
-}
-
-.bgc {
-   padding: 40px 0;
 }
 
 .category .category-list {
@@ -848,31 +841,25 @@ html {
    transition: width 0.5s ease;
 }
 
-/* <<========== NEW CLASS ==========>> */
-.footer {
-   padding-top: 30px;
-   padding-bottom: 40px;
-}
-
-.footer .container__footer {
+#contact .container__contact {
    display: grid;
    grid-template-columns: 3.5fr 1fr 1fr 1fr;
    grid-gap: 30px;
 }
 
-.footer .footer-items {
+#contact .contact-items {
    font-size: 15px;
    font-weight: 400;
 }
 
-.footer .footer-items__text {
+#contact .contact-items__text {
    display: block;
    color: var(--color-text);
    margin-bottom: 10px;
    line-height: 1.7;
 }
 
-.footer .footer-items__text:first-child {
+#contact .contact-items__text:first-child {
    padding: 40px 0;
    letter-spacing: 0.5px;
    font-size: 17px;
@@ -881,28 +868,28 @@ html {
    margin-bottom: 0;
 }
 
-.footer .footer-items__description {
+#contact .contact-items__description {
    margin-top: 0;
    margin-bottom: 15px;
 }
 
-.footer .footer-items__description a {
+#contact .contact-items__description a {
    text-decoration: none;
    color: var(--color-orange);
 }
 
-.footer .footer-items__description a:hover,
-.footer .footer-items__list li a:hover {
+#contact .contact-items__description a:hover,
+#contact .contact-items__list li a:hover {
    color: var(--color-red);
 }
 
-.footer .footer-items__list {
+#contact .contact-items__list {
    list-style-type: none;
    padding: 0;
    margin: 0;
 }
 
-.footer .footer-items__list li:first-child {
+#contact .contact-items__list li:first-child {
    padding: 40px 0;
    letter-spacing: 0.5px;
    font-size: 17px;
@@ -911,56 +898,53 @@ html {
    color: var(--color-text);
 }
 
-.footer .footer-items__list li a {
+#contact .contact-items__list li a {
    text-decoration: none;
    color: #707070;
    line-height: 30px;
 }
 
-/* <<========== NEW CLASS ==========>> */
-.copyright {
-   padding: 24px 0;
+#copyright {
    background: var(--color-primary);
    color: var(--color-white);
    font-size: 15px;
 }
 
-.copyright .container__copyright {
+#copyright .container__copyright {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.copyright a {
+#copyright a {
    color: var(--color-white);
    text-decoration: none;
 }
 
-.copyright span a:hover,
+#copyright span a:hover,
 .copyright-list a:hover {
    color: var(--color-red);
    transition: 0.2s;
 }
 
-.copyright .copyright-list {
+#copyright .copyright-list {
    list-style-type: none;
    margin: 0;
 }
 
-.copyright .copyright-list li {
+#copyright .copyright-list li {
    display: inline-block;
    border-right: 1px solid #fff;
 }
 
-.copyright .copyright-list li:last-child {
+#copyright .copyright-list li:last-child {
    border-right: inherit;
 }
 
-.copyright .copyright-list li a {
+#copyright .copyright-list li a {
    padding: 0 15px;
 }
 
-/* <<========== NEW CLASS ==========>> */
 .contact-group {
    position: fixed;
    bottom: 8rem;

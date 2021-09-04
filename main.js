@@ -107,7 +107,7 @@ function renderCategories() {
    for (var i = 0; i < categories.length; i++) {
       var category = categories[i];
       html += `
-    <li><a class="product-link" onclick="onClickShowProducts(${category.id})">${category.name}</a></li>
+    <li><a href="#" class="product-link" onclick="onClickShowProducts(${category.id})">${category.name}</a></li>
     `
    }
    setHtml(".product-left", html);
