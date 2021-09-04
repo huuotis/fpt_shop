@@ -156,5 +156,3 @@ function renderProducts(products) {
    }
    setHtml(".product-right", html);
 }
-
-console.log(Number("3.000000"))
